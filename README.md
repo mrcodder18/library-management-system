@@ -27,24 +27,27 @@ This is a terminal-based Library Management System built using **Python** with *
 ---
 
 ## 📁 Project Structure
-project/
-│
-├── finallibrary.py # Main application logic (single file)
-└── data/ # Folder containing all CSV files
-├── members.csv # Stores member info with hashed passwords
-├── books.csv # Stores book catalog and availability
-└── loans.csv # Stores issued/returned book history
+-project/
+ -│
+ -├── finallibrary.py # Main application logic (single file)
+ -└── data/ # Folder containing all CSV files
+ -├── members.csv # Stores member info with hashed passwords
+ -├── books.csv # Stores book catalog and availability
+ -└── loans.csv # Stores issued/returned book history
+---
 
 ##Install Required Package
-Install bcrypt for password hashing:
-                                    pip install bcrypt
+-Install bcrypt for password hashing:
+  -pip install bcrypt
+
+---
 ##Setup CSV Files (If Not Already Created)
-Create the data/ folder and add the following empty CSV files:
+-Create the data/ folder and add the following empty CSV files:
 
-📄 members.csv
-MemberID,Name,PasswordHash,Email,JoinDate
-📄 books.csv
+-📄 members.csv
+-MemberID,Name,PasswordHash,Email,JoinDate
+-📄 books.csv
 
-ISBN,Title,Author,CopiesTotal,CopiesAvailable
-📄 loans.csv
-LoanID,MemberID,ISBN,IssueDate,DueDate,ReturnDate
+-ISBN,Title,Author,CopiesTotal,CopiesAvailable
+-📄 loans.csv
+-LoanID,MemberID,ISBN,IssueDate,DueDate,ReturnDate
